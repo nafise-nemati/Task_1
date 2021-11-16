@@ -7,8 +7,9 @@
         دنیای دیجیتال
     </title>
     <link rel="stylesheet" href="../css/mystyle.css">
-    <link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="فروشگاه آنلاین شامل انواع لپ تاپ و گوشی">
+    <meta name="keywords" content="لپ تاپ, گوشی, هدفون, هندزفری, دیجیتال">
 </head>
 
 <body>
@@ -62,9 +63,13 @@
         <textarea rows="5" cols="50" wrap="soft"></textarea>
         <input type="submit" value="Submit">
     </p>
-    <h4>
+    <p>
         معرفي محصولات:
-    </h4>
+    </p>
+    <h4>hp </h4>
+    <h4>asus </h4>
+    <h4>acer </h4>
+    <h4>lenovo </h4>
     <table>
         <caption>
             ليست محصولات
@@ -166,20 +171,50 @@
         </form>
         <hr>
         <p>
-            برای بررسی قیمت ها به سایت دیوار هم میتونید مراجعه کنید:
+            برای بررسی قیمت ها به سایت <sup> دیوار </sup> هم میتونید مراجعه کنید:
         </p>
         <a href="https://divar.ir/" target="_blank">
             <img src="../src/img/sd.png" alt="samsung" id="imagetable">
         </a>
+        <p>
+            و همچنین سایت <sub>دیجی کالا</sub> :</p>
+        <a href="https://www.digikala.com/" target="_blank">
+            <img src="../src/img/d.kala.png" alt="digikala" id="imagetable">
+        </a>
+        <p>میتونید نظراتتون براون ارسال کنید
+            <br> <a href="mailto:someone@example.com">Send email</a>
+        </p>
         <p>محصول <abbr title="solid state disk">ssd</abbr> خرید شگفت‌انگیز این هفته است</p>
         <p id="para1">مدیر مجموعه: <q>مرسی از اعتماد شما.</q></p>
         <details>
             <summary> آدرس</summary>
             <p>تهران میدان فردوسی کوچۀ 3 پلاک 5</p>
         </details>
+        <p>میزان رضایتتون:</p>
+
+        <form action="/action_page.php">
+            <label for="رضایت">انتخاب:</label>
+            <select id="رضایت" name="cars" size="4" multiple>
+            <option value="عالی">عالی</option>
+            <option value="بسیارخوب">بسیارخوبب</option>
+            <option value="خوب">خوب</option>
+            <option value="متوسط">متوسط</option>
+            <option value="بد">بد </option>
+          </select><br><br>
+            <input type="submit">
+        </form>
+        <hr>
+        <form action="/action_page.php">
+            <label for="datemin">ناریخ انتخاب محصول:</label>
+            <input type="date" id="datemin" name="datemin" min="1385-01-02"><br><br>
+
+            <label for="datemax">تاریخ تحویل:</label>
+            <input type="date" id="datemax" name="datemax" max="1398-12-31"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
         <button type="button" onclick="myFunction()"> زمان پاسخ‌دهی</button>
         <p id="demo">پایان</p>
-
         <script>
             function myFunction() {
                 document.getElementById("demo").innerHTML = "شنبه تا چهارشنبه";

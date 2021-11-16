@@ -3,21 +3,32 @@ body {
     direction: rtl;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 480px) {
     body {
-        background-color: rgb(144, 150, 238);
+        background-color: rgba(224, 228, 13, 0.699);
     }
+}
+
+body {
+    /* Set "my-sec-counter" to 0 */
+    counter-reset: my-sec-counter;
+}
+
+h4::before {
+    /* Increment "my-sec-counter" by 1 */
+    counter-increment: my-sec-counter;
+    content: counter(my-sec-counter, upper-roman) ". ";
 }
 
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 10;
+    padding: 20;
     overflow: hidden;
     position: fixed;
-    background-color: #333;
-    top: 0;
-    width: 200%;
+    background-color: rgb(77, 10, 116);
+    top: 0px;
+    width: 500%;
 }
 
 li {
@@ -25,15 +36,15 @@ li {
 }
 
 li a {
-    display: block;
+    display: rgb(9, 110, 150);
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 5px 16px;
     text-decoration: none;
 }
 
 li a:hover:not(.active) {
-    background-color: #111;
+    background-color: rgb(10, 179, 24);
 }
 
 .active {
@@ -59,28 +70,19 @@ li a:hover:not(.active) {
     padding: 15px;
 }
 
-a:link {
-    color: green;
-    background-color: transparent;
-    text-decoration: none;
-}
-
+a:link,
 a:visited {
-    color: pink;
-    background-color: transparent;
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
     text-decoration: none;
+    display: inline-block;
 }
 
-a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
-}
-
+a:hover,
 a:active {
-    color: yellow;
-    background-color: transparent;
-    text-decoration: underline;
+    background-color: rgb(18, 158, 41);
 }
 
 
@@ -97,8 +99,8 @@ a:active {
 /* Style the element with the id "imagetable" */
 
 #imagetable {
-    width: 70px;
-    height: 50px;
+    width: 110px;
+    height: 70px;
 }
 
 table {
@@ -125,7 +127,7 @@ h1 {
     margin: 50px;
 }
 
-h4 {
+h2 {
     font-size: larger;
     color: rgb(173, 25, 25);
     border: 2px solid rgb(5, 4, 4);
