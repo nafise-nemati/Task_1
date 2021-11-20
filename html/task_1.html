@@ -7,6 +7,7 @@
         دنیای دیجیتال
     </title>
     <link rel="stylesheet" href="../css/mystyle.css">
+    <link rel="stylesheet" href="../css/resrt.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="فروشگاه آنلاین شامل انواع لپ تاپ و گوشی">
     <meta name="keywords" content="لپ تاپ, گوشی, هدفون, هندزفری, دیجیتال">
@@ -37,80 +38,92 @@
         </b> &#128525;
     </p>
     <center>
-        <img src="../src/img/a.jpg" alt="لپ تاپ" id="image">
-        <img src="../src/img/c.jpg" alt="لپ تاپ" id="image">
+        <img src="../src/img/a.jpg" alt="لپ تاپ" class="image">
+        <img src="../src/img/c.jpg" alt="لپ تاپ" class="image">
     </center>
-    <h2 id="Header">محصولات موجود در فروشگاه:</h2>
-    <ol>
-        <input type="checkbox" name="دیجیتال" value="لپ تاپ" checked="checked"> <label for="دیجیتال"> لپ تاپ</label>
-        <br>
-        <input type="checkbox" name="دیجیتال" value="گوشی" checked="checked"> <label for="دیجیتال"> گوشی</label>
-        <br>
-        <input type="checkbox" name="دیجیتال" value="هدفون" checked="checked">
-        <label for="دیجیتال"> هدفون</label><br>
-        <br>
-    </ol>
-    <h3>
-        برای مقایسه محصولات و قیمت ها به این لینک مراجعه کنید.
-    </h3>
-    <p>
-        <a href="https://www.digikala.com" target="blank">link</a>
-        <hr>
-        <textarea rows="5" cols="50" wrap="soft"></textarea>
-        <input type="submit" value="Submit">
-    </p>
-    <p>
-        معرفي محصولات:
-    </p>
-    <h4>hp </h4>
-    <h4>asus </h4>
-    <h4>acer </h4>
-    <h4>lenovo </h4>
-    <table>
-        <caption>
-            ليست محصولات
-        </caption>
-        <thead>
-            <tr>
-                <th>نام محصول</th>
-                <th>برند</th>
-                <th>حدود قیمت</th>
-                <th> تصویر</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>لپ تاپ</td>
-                <td>lenovo</td>
-                <td>15000000</td>
-                <td>
-                    <img src="../src/img/d.jpg" alt="لپ تاپ" id="imagetable">
-                </td>
-            </tr>
-            <tr>
-                <td>گوشی</td>
-                <td>htc</td>
-                <td>1200000</td>
-                <td>
-                    <img src="../src/img/sz.jpg" alt="گوشی " id="imagetable">
-                </td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="4">تحویل محصولات 3 روز کاری</td>
-            </tr>
-        </tfoot>
-    </table>
-    <p>محصول مورد نظر خود را اتنخاب کنید:</p>
     <form action="/action_page.php">
-        <label for="محصول">نوع محصول:</label>
-        <select id="محصولات موجود" name="cars">
+
+        <form action="/action_page.html">
+            <input type="checkbox" id="digital1" name="digital1" value="لپ تاپ">
+            <label for="digital1"> لپ تاپ</label><br>
+            <input type="checkbox" id="digital2" name="digital2" value="گوشی">
+            <label for="digital2"> گوشی</label><br>
+            <input type="checkbox" id="digital3" name="digital3" value="هدفون">
+            <label for="digital3"> هدفون</label><br>
+            <input type="submit" value="Submit">
+        </form>
+        <h3>
+            برای مقایسه محصولات و قیمت ها به این لینک مراجعه کنید.
+        </h3>
+        <p>
+            <a href="https://www.digikala.com" target="blank">link</a>
+            <hr>
+            <textarea rows="5" cols="50" wrap="soft"></textarea>
+            <input type="submit" value="Submit">
+        </p>
+        <p>
+            معرفي محصولات:
+        </p>
+        <h4>hp </h4>
+        <h4>asus </h4>
+        <h4>acer </h4>
+        <h4>lenovo </h4>
+        <table>
+            <caption>
+                ليست محصولات
+            </caption>
+            <thead>
+                <tr>
+                    <th>نام محصول</th>
+                    <th>برند</th>
+                    <th>حدود قیمت</th>
+                    <th> تصویر</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>لپ تاپ</td>
+                    <td>lenovo</td>
+                    <td>15000000</td>
+                    <td>
+                        <img src="../src/img/d.jpg" alt="لپ تاپ" class="imagetable">
+                    </td>
+                </tr>
+                <tr>
+                    <td>گوشی</td>
+                    <td>htc</td>
+                    <td>1200000</td>
+                    <td>
+                        <img src="../src/img/sz.jpg" alt="گوشی " class="imagetable">
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">تحویل محصولات 3 روز کاری</td>
+                </tr>
+            </tfoot>
+        </table>
+        <form action="/action_page.html">
+            <p>چه مارکی مورد تایید شماست؟</p>
+            <input type="radio" id="mark1" name="mark" value="hp">
+            <label for="mark1">hp</label><br>
+            <input type="radio" id="mark2" name="mark" value="acer">
+            <label for="mark2">acer</label><br>
+            <input type="radio" id="mark3" name="mark" value="asus">
+            <label for="mark3">asus</label><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <p>محصول مورد نظر خود را اتنخاب کنید:</p>
+        <form action="/action_page.php">
+            <label for="محصول">نوع محصول:</label>
+            <select id="محصولات موجود" name="cars">
         <option value="لپ تاپ">لپ تاپ</option>
         <option value="گوشی">گوشی</option>
         <option value="هدفون" selected>هدفون</option>
       </select>
-        <input type="submit" </form>
+            <input type="submit">
+        </form>
         <p class="property">
             number:12345678
         </p>
@@ -170,12 +183,12 @@
             برای بررسی قیمت ها به سایت <sup> دیوار </sup> هم میتونید مراجعه کنید:
         </p>
         <a href="https://divar.ir/" target="_blank">
-            <img src="../src/img/sd.png" alt="samsung" id="imagetable">
+            <img src="../src/img/sd.png" alt="samsung" class="imagetable">
         </a>
         <p>
             و همچنین سایت <sub>دیجی کالا</sub> :</p>
         <a href="https://www.digikala.com/" target="_blank">
-            <img src="../src/img/d.kala.png" alt="digikala" id="imagetable">
+            <img src="../src/img/d.kala.png" alt="digikala" class="imagetable">
         </a>
         <p>میتونید نظراتتون براون ارسال کنید
             <br> <a href="mailto:someone@example.com">Send email</a>
