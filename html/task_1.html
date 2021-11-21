@@ -41,195 +41,201 @@
         <img src="../src/img/a.jpg" alt="لپ تاپ" class="image">
         <img src="../src/img/c.jpg" alt="لپ تاپ" class="image">
     </center>
-    <form action="/action_page.php">
-
-        <form action="/action_page.html">
-            <input type="checkbox" id="digital1" name="digital1" value="لپ تاپ">
-            <label for="digital1"> لپ تاپ</label><br>
-            <input type="checkbox" id="digital2" name="digital2" value="گوشی">
-            <label for="digital2"> گوشی</label><br>
-            <input type="checkbox" id="digital3" name="digital3" value="هدفون">
-            <label for="digital3"> هدفون</label><br>
-            <input type="submit" value="Submit">
-        </form>
-        <h3>
-            برای مقایسه محصولات و قیمت ها به این لینک مراجعه کنید.
-        </h3>
-        <p>
-            <a href="https://www.digikala.com" target="blank">link</a>
-            <hr>
-            <textarea rows="5" cols="50" wrap="soft"></textarea>
-            <input type="submit" value="Submit">
-        </p>
-        <p>
-            معرفي محصولات:
-        </p>
-        <h4>hp </h4>
-        <h4>asus </h4>
-        <h4>acer </h4>
-        <h4>lenovo </h4>
-        <table>
-            <caption>
-                ليست محصولات
-            </caption>
-            <thead>
-                <tr>
-                    <th>نام محصول</th>
-                    <th>برند</th>
-                    <th>حدود قیمت</th>
-                    <th> تصویر</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>لپ تاپ</td>
-                    <td>lenovo</td>
-                    <td>15000000</td>
-                    <td>
-                        <img src="../src/img/d.jpg" alt="لپ تاپ" class="imagetable">
-                    </td>
-                </tr>
-                <tr>
-                    <td>گوشی</td>
-                    <td>htc</td>
-                    <td>1200000</td>
-                    <td>
-                        <img src="../src/img/sz.jpg" alt="گوشی " class="imagetable">
-                    </td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="4">تحویل محصولات 3 روز کاری</td>
-                </tr>
-            </tfoot>
-        </table>
-        <form action="/action_page.html">
-            <p>چه مارکی مورد تایید شماست؟</p>
-            <input type="radio" id="mark1" name="mark" value="hp">
-            <label for="mark1">hp</label><br>
-            <input type="radio" id="mark2" name="mark" value="acer">
-            <label for="mark2">acer</label><br>
-            <input type="radio" id="mark3" name="mark" value="asus">
-            <label for="mark3">asus</label><br><br>
-            <input type="submit" value="Submit">
-        </form>
-        <p>محصول مورد نظر خود را اتنخاب کنید:</p>
-        <form action="/action_page.php">
-            <label for="محصول">محصول:</label>
-            <select id="digital" name="محصولات">
+    <form action="/action_page.html" method="post">
+        <input type="checkbox" id="digital1" name="digital1" value="لپ تاپ">
+        <label for="digital1"> لپ تاپ</label><br>
+        <input type="checkbox" id="digital2" name="digital2" value="گوشی">
+        <label for="digital2"> گوشی</label><br>
+        <input type="checkbox" id="digital3" name="digital3" value="هدفون">
+        <label for="digital3"> هدفون</label><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h3>
+        برای مقایسه محصولات و قیمت ها به این لینک مراجعه کنید.
+    </h3>
+    <p>
+        <a href="https://www.digikala.com" target="blank">link</a>
+        <hr>
+        <textarea rows="5" cols="50" wrap="soft"></textarea>
+        <input type="submit" value="Submit">
+    </p>
+    <p>
+        معرفي محصولات:
+    </p>
+    <h4>hp </h4>
+    <h4>asus </h4>
+    <h4>acer </h4>
+    <h4>lenovo </h4>
+    <table>
+        <caption>
+            ليست محصولات
+        </caption>
+        <thead>
+            <tr>
+                <th>نام محصول</th>
+                <th>برند</th>
+                <th>حدود قیمت</th>
+                <th> تصویر</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>لپ تاپ</td>
+                <td>lenovo</td>
+                <td>15000000</td>
+                <td>
+                    <img src="../src/img/d.jpg" alt="لپ تاپ" class="imagetable">
+                </td>
+            </tr>
+            <tr>
+                <td>گوشی</td>
+                <td>htc</td>
+                <td>1200000</td>
+                <td>
+                    <img src="../src/img/sz.jpg" alt="گوشی " class="imagetable">
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">تحویل محصولات 3 روز کاری</td>
+            </tr>
+        </tfoot>
+    </table>
+    <form action="/action_page.html" method="get">
+        <p>چه مارکی مورد تایید شماست؟</p>
+        <input type="radio" id="mark1" name="mark" value="hp">
+        <label for="mark1">hp</label><br>
+        <input type="radio" id="mark2" name="mark" value="acer">
+        <label for="mark2">acer</label><br>
+        <input type="radio" id="mark3" name="mark" value="asus">
+        <label for="mark3">asus</label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>محصول مورد نظر خود را اتنخاب کنید:</p>
+    <form action="/action_page.php" method="get">
+        <select id="digital" name="محصولات">
         <option value="لپ تاپ">لپ تاپ</option>
         <option value="گوشی">گوشی</option>
         <option value="هدفون" selected>هدفون</option>
       </select>
-            <input type="submit">
-        </form>
-        <p class="property">
-            number:12345678
-        </p>
-        <h5 id="Header">راهنمای استفاده از سایت:</h5>
-        <center>
-            <video width="400px" height="240" controls>
+        <input type="submit">
+    </form>
+    <form action="/action_page.php" method="get">
+        <input type="color">
+        <input type="submit" value="ارسال">
+    </form>
+    <form action="/action_page.php" method="get">
+        <input type="file">
+        <input type="submit" value="ارسال">
+        <input type="reset" value="Reset">
+    </form>
+    <p class="property">
+        number:12345678
+    </p>
+    <h5 id="Header">راهنمای استفاده از سایت:</h5>
+    <center>
+        <video width="400px" height="240" controls>
       <source src="../src/video/r.mp4" type="video/mp4">
     </video>
-        </center>
-        <h6 class="property">
-            ساعت و روز کاری
-        </h6>
-        <table>
-            <thead>
-                <tr>
-                    <th>روز</th>
-                    <th>ساعت پاسخ‌دهی</th>
-                    <th>ساعت مراجعه حضوری</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td> شنبه</td>
-                    <td rowspan="2">3-5</td>
-                    <td>8</td>
-                </tr>
-                <tr>
-                    <td>دوشنبه</td>
-                    <td>3/5</td>
-                </tr>
-                <tr>
-                    <td>چهارشنبه</td>
-                    <td>6</td>
-                    <td>9</td>
-                </tr>
-            </tbody>
-        </table>
-        <h6 class="property">فرم ثبت نام </h6>
-        <form action="/action_page.php">
-            <div>
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="First name" value="nafiseh"><br>
-            </div>
-            <div>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname" value="nemati"><br><br>
-            </div>
-            <div>
-                <label for="Phnumber">Phone number:</label><br>
-                <input type="text" id="Phnumber" name="ph.number" value="123456"><br><br>
-            </div>
-            <input type="submit" value="Submit">
-        </form>
-        <hr>
-        <p>
-            برای بررسی قیمت ها به سایت <sup> دیوار </sup> هم میتونید مراجعه کنید:
-        </p>
-        <a href="https://divar.ir/" target="_blank">
-            <img src="../src/img/sd.png" alt="samsung" class="imagetable">
-        </a>
-        <p>
-            و همچنین سایت <sub>دیجی کالا</sub> :</p>
-        <a href="https://www.digikala.com/" target="_blank">
-            <img src="../src/img/d.kala.png" alt="digikala" class="imagetable">
-        </a>
-        <p>میتونید نظراتتون براون ارسال کنید
-            <br> <a href="mailto:someone@example.com">Send email</a>
-        </p>
-        <p>محصول <abbr title="solid state disk">ssd</abbr> خرید شگفت‌انگیز این هفته است</p>
-        <p id="para1">مدیر مجموعه: <q>مرسی از اعتماد شما.</q></p>
-        <details>
-            <summary> آدرس</summary>
-            <p>تهران میدان فردوسی کوچۀ 3 پلاک 5</p>
-        </details>
-        <p>میزان رضایتتون:</p>
+    </center>
+    <h6 class="property">
+        ساعت و روز کاری
+    </h6>
+    <table>
+        <thead>
+            <tr>
+                <th>روز</th>
+                <th>ساعت پاسخ‌دهی</th>
+                <th>ساعت مراجعه حضوری</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> شنبه</td>
+                <td rowspan="2">3-5</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>دوشنبه</td>
+                <td>3/5</td>
+            </tr>
+            <tr>
+                <td>چهارشنبه</td>
+                <td>6</td>
+                <td>9</td>
+            </tr>
+        </tbody>
+    </table>
+    <h6 class="property">فرم ثبت نام </h6>
+    <form action="/action_page.php" method="post">
+        <div>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="First name" value="nafiseh"><br>
+        </div>
+        <div>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="nemati"><br><br>
+        </div>
+        <div>
+            <label for="Phnumber">Phone number:</label><br>
+            <input type="text" id="Phnumber" name="ph.number" value="123456"><br><br>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+    <p>
+        برای بررسی قیمت ها به سایت <sup> دیوار </sup> هم میتونید مراجعه کنید:
+    </p>
+    <a href="https://divar.ir/" target="_blank">
+        <img src="../src/img/sd.png" alt="samsung" class="imagetable">
+    </a>
+    <p>
+        و همچنین سایت <sub>دیجی کالا</sub> :</p>
+    <a href="https://www.digikala.com/" target="_blank">
+        <img src="../src/img/d.kala.png" alt="digikala" class="imagetable">
+    </a>
+    <p>میتونید نظراتتون براون ارسال کنید
+        <br> <a href="mailto:someone@example.com">Send email</a>
+    </p>
+    <p>محصول <abbr title="solid state disk">ssd</abbr> خرید شگفت‌انگیز این هفته است</p>
+    <p id="para1">مدیر مجموعه: <q>مرسی از اعتماد شما.</q></p>
+    <details>
+        <summary> آدرس</summary>
+        <p>تهران میدان فردوسی کوچۀ 3 پلاک 5</p>
+    </details>
+    <p>میزان رضایتتون:</p>
 
-        <form action="/action_page.php">
-            <label for="رضایت">انتخاب:</label>
-            <select id="رضایت" name="cars" size="4" multiple>
+    <form action="/action_page.php">
+        <label for="رضایت">انتخاب:</label>
+        <select id="رضایت" name="cars" size="4" multiple>
             <option value="عالی">عالی</option>
             <option value="بسیارخوب">بسیارخوبب</option>
             <option value="خوب">خوب</option>
             <option value="متوسط">متوسط</option>
             <option value="بد">بد </option>
           </select><br><br>
-            <input type="submit">
-            <input type="reset" value="Reset">
-        </form>
-        <hr>
-        <form action="/action_page.php">
-            <label for="datemin">ناریخ انتخاب محصول:</label>
-            <input type="date" id="datemin" name="datemin" min="1385-01-02"><br><br>
+        <input type="submit">
+        <input type="reset" value="Reset">
+    </form>
+    <hr>
+    <form action="/action_page.php">
+        <label for="datemin">ناریخ انتخاب محصول:</label>
+        <input type="date" id="datemin" name="datemin" min="1385-01-02"><br><br>
 
-            <label for="datemax">تاریخ تحویل:</label>
-            <input type="date" id="datemax" name="datemax" max="1398-12-31"><br><br>
+        <label for="datemax">تاریخ تحویل:</label>
+        <input type="date" id="datemax" name="datemax" max="1398-12-31"><br><br>
 
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
-        </form>
-        <button type="button" onclick="myFunction()"> زمان پاسخ‌دهی</button>
-        <p id="demo">پایان</p>
-        <script>
-            function myFunction() {
-                document.getElementById("demo").innerHTML = "شنبه تا چهارشنبه";
-            }
-        </script>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    <button type="button" onclick="myFunction()"> زمان پاسخ‌دهی</button>
+    <p id="demo">پایان</p>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "شنبه تا چهارشنبه";
+        }
+    </script>
 </body>
 
 </html>
