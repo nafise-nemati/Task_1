@@ -116,8 +116,8 @@
         </form>
         <p>محصول مورد نظر خود را اتنخاب کنید:</p>
         <form action="/action_page.php">
-            <label for="محصول">نوع محصول:</label>
-            <select id="محصولات موجود" name="cars">
+            <label for="محصول">محصول:</label>
+            <select id="digital" name="محصولات">
         <option value="لپ تاپ">لپ تاپ</option>
         <option value="گوشی">گوشی</option>
         <option value="هدفون" selected>هدفون</option>
@@ -162,10 +162,10 @@
             </tbody>
         </table>
         <h6 class="property">فرم ثبت نام </h6>
-        <form action="/action_page.html">
+        <form action="/action_page.php">
             <div>
                 <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" value="nafiseh"><br>
+                <input type="text" id="fname" name="First name" value="nafiseh"><br>
             </div>
             <div>
                 <label for="lname">Last name:</label><br>
@@ -173,10 +173,9 @@
             </div>
             <div>
                 <label for="Phnumber">Phone number:</label><br>
-                <input type="text" id="Phnumber" name="ph.number" value="123456"><br>
-                <input type="submit" value="Submit">
-                <input type="reset">
+                <input type="text" id="Phnumber" name="ph.number" value="123456"><br><br>
             </div>
+            <input type="submit" value="Submit">
         </form>
         <hr>
         <p>
@@ -211,6 +210,7 @@
             <option value="بد">بد </option>
           </select><br><br>
             <input type="submit">
+            <input type="reset" value="Reset">
         </form>
         <hr>
         <form action="/action_page.php">
@@ -221,6 +221,7 @@
             <input type="date" id="datemax" name="datemax" max="1398-12-31"><br><br>
 
             <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
         </form>
         <button type="button" onclick="myFunction()"> زمان پاسخ‌دهی</button>
         <p id="demo">پایان</p>
